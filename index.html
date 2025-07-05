@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Twitter UI Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e6ecf0;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 20px;
+      background-color: white;
+    }
+
+    .sidebar {
+      width: 20%;
+      padding: 20px;
+      background: #fff;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidebar .logo {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 10px 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tweet-button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      background: #1da1f2;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .feed {
+      width: 50%;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .tweet-box {
+      background: #f5f8fa;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tweet-box input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 16px;
+    }
+
+    .tweet-actions {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #1da1f2;
+    }
+
+    .tweet-send {
+      float: right;
+      margin-top: 10px;
+      background: #1da1f2;
+      color: white;
+      padding: 6px 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .tweet {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+    }
+
+    .tweet img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .actions {
+      margin-top: 10px;
+      color: #657786;
+    }
+
+    .actions span {
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    .hashtag {
+      color: #1da1f2;
+    }
+
+    .trends {
+      width: 30%;
+      padding: 20px;
+    }
+
+    .trends h3 {
+      margin-bottom: 15px;
+    }
+
+    .trends ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .trends li {
+      background: #f5f8fa;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">🐦</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Explore</li>
+          <li>Notifications</li>
+          <li>Messages</li>
+          <li>Bookmarks</li>
+          <li>Lists</li>
+          <li>Profile</li>
+          <li>More</li>
+        </ul>
+        <button class="tweet-button">Tweet</button>
+      </nav>
+    </aside>
+
+    <main class="feed">
+      <div class="tweet-box">
+        <input type="text" placeholder="What's happening?" />
+        <div class="tweet-actions">
+          <span>📷</span> <span>🎬</span> <span>😊</span> <span>📊</span>
+        </div>
+        <button class="tweet-send">Tweet</button>
+      </div>
+
+      <div class="tweet">
+        <p><strong>Brie</strong> @Stkch_ComedyFan • 3m<br>
+        Giving standup comedy a go. Open mic starts at 7, hit me up if you want ticket <span class="hashtag">#theregoessomething</span></p>
+        <div class="actions"><span>💬 1</span> <span>🔁 2</span> <span>❤️ 8</span></div>
+      </div>
+
+      <div class="tweet">
+        <p><strong>Harold</strong> @hj_wang88 • 10m<br>
+        Vacation is going great!</p>
+        <img src="image.png" alt="Sunset">
+        <div class="actions"><span>💬 3</span> <span>🔁 6</span> <span>❤️ 14</span></div>
+      </div>
+
+      <div class="tweet">
+        <p><strong>Andrea</strong> @andy_landerson • 3m<br>
+        How many lemons do I need to make lemonade?</p>
+      </div>
+    </main>
+
+    <aside class="trends">
+      <h3>Trends for you</h3>
+      <ul>
+        <li><span>#BreakingNews</span><br>Space - 10,094 tweets</li>
+        <li><span>#WorldNews</span><br>125K Tweets</li>
+        <li><span>#Animals</span><br>2,757 people are tweeting</li>
+        <li><span>#GreatestOfAllTime</span><br>100K Tweets</li>
+      </ul>
+    </aside>
+  </div>
+</body>
+</html>
